@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meine erste Webseite zum Thema Haustier!</title>
+    <meta
+      name="description"
+      content="Hallo! Das ist meine erste eigene Webseite."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="top">
+    <!-- Für Tastatur (Tab): direkt zum Inhalt springen -->
+    <a class="skip-link" href="#start">Zum Inhalt springen</a>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="kicker">Hi! Ich bin</p>
+
+        <!-- ✅ ÄNDERE HIER: Deinen Namen -->
+        <h1>
+          Melina
+          <!-- ❌ Hier nichts ändern! Das Emoji wird im JavaScript gesetzt (weiter unten im <script>) -->
+          <span class="wave" id="nameEmoji" aria-hidden="true">❌</span>
+        </h1>
+
+        <p class="sub">
+          Willkommen auf meiner ersten eigenen Webseite. Ich erzählr dir
+          <strong>WARUM</strong> man ein Haustier als Schüler haben sollte.
+          Informiere dich!
+        </p>
+
+        <nav class="hero-nav" aria-label="Seitennavigation">
+          <a class="pill" href="#ueber-mich">10 Gründe warum</a>
+          <a class="pill" href="#lieblings-emoji">Welche sind beliebt</a>
+          <a class="pill" href="#mochte-ich">Preise</a>
+          <a class="pill" href="#projekte">Was fressen Sie</a>
+        </nav>
+
+        <p class="hero-cta">
+          <a class="btn btn-hero" href="#ueber-mich">Los geht’s ✨</a>
+        </p>
+      </div>
+    </header>
+
+    <main id="start" class="container">
+      <!-- ÜBER MICH -->
+      <section id="ueber-mich" class="section">
+        <h2 class="section-title">10 Gründe warum</h2>
+
+        <!-- ✅ ÄNDERE HIER: Deinen Text -->
+        <ol>
+          <li>Verantwortungsbewusstsein</li>
+          <li>Stressabbau und Entspannung</li>
+          <li>Empathie und Einfühlungsvermögen</li>
+          <li>Treue Freunde gegen Einsamkeit</li>
+          <li>Bewegung und Natur</li>
+          <li>Stärkung des Immunsystems</li>
+          <li>Struktur im Alltag</li>
+          <li>Selbstvertrauen stärkenn</li>
+          <li>Geduld lernen</li>
+          <li>Soziale Kompetenzen</li>
+        </ol>
+
+        <!-- LIEBLINGS-EMOJI -->
+        <section id="lieblings-emoji" class="section">
+          <h2 class="section-title">Welche sind beliebt</h2>
+
+          <div class="special">
+            <div class="special-inner">
+              <h3 class="special-kicker">2026</h3>
+
+              <!-- ❌ Hier nichts ändern! Das Emoji wird im JavaScript gesetzt (weiter unten im <script>) -->
+              <div
+                class="special-emoji"
+                id="favEmoji"
+                aria-label="Lieblings-Emoji"
+              >
+                ❌
+              </div>
+
+              <button class="btn btn-rain" type="button" id="rainBtn">
+                Klick hier 👇
+              </button>
+
+              <div class="special-hint">
+                <em>
+                  <h4><strong>Die 6 beliebtesten:</strong></h4>
+                  <p>
+                    <strong>Katzen:</strong><br />
+                    Absoluter Spitzenreiter, da sie sich gut für die
+                    Wohnungshaltung eignen, was besonders in städtischen
+                    Gebieten geschätzt wird.
+                  </p>
+
+                  <p>
+                    <strong>Hunde:</strong><br />
+                    Sehr beliebt, auch als Motivator für mehr Bewegung.
+                  </p>
+
+                  <p>
+                    <strong
+                      >Kleintiere (Kaninchen, Meerschweinchen, Hamster):</strong
+                    ><br />
+                    Beliebt bei Familien.
+                  </p>
+
+                  <p>
+                    <strong>Vögel (Sittiche, Kanarienvögel):</strong><br />
+                    Weiterhin ein Klassiker in vielen Haushalten.
+                  </p>
+
+                  <p>
+                    <strong>Fische (Aquarien/Gartenteiche):</strong><br />
+                    Beliebt, erfordern jedoch spezifische Pflege.
+                  </p>
+
+                  <p>
+                    <strong
+                      >Reptilien/Terrarientiere (Geckos, Schlangen):</strong
+                    ><br />
+                    Eine wachsende Nische, oft gewählt, weil sie weniger Platz
+                    benötigen.
+                  </p>
+                </em>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="sticker-grid">
+          <figure class="sticker tilt-l">
+            <!-- ✅ ÄNDERE HIER: Bild-Dateiname + alt-Text -->
+            <img src="bilder/kätzchen.webp" alt="ein kätzchen sitzt" />
+            <!-- ✅ ÄNDERE HIER: Bild-Unterschrift -->
+            <figcaption>Katze</figcaption>
+          </figure>
+
+          <figure class="sticker tilt-r">
+            <img
+              src="bilder/hündchen.jpg"
+              alt="Ein welpe schaut aus einem korb"
+            />
+            <figcaption>Hund</figcaption>
+          </figure>
+
+          <figure class="sticker tilt-r">
+            <img
+              src="bilder/kleintier.jpg"
+              alt="Ein welpe schaut aus einem korb"
+            />
+            <figcaption>Hasen</figcaption>
+          </figure>
+
+          <figure class="sticker tilt-r">
+            <img src="bilder/vögel.jpg" alt="Ein welpe schaut aus einem korb" />
+            <figcaption>Nymphensittiche</figcaption>
+          </figure>
+
+          <figure class="sticker tilt-r">
+            <img
+              src="bilder/fische.jpg"
+              alt="Ein welpe schaut aus einem korb"
+            />
+            <figcaption>Oranda-Goldfische</figcaption>
+          </figure>
+
+          <figure class="sticker tilt-r">
+            <img
+              src="bilder/reptil.jpeg"
+              alt="Ein welpe schaut aus einem korb"
+            />
+            <figcaption>Streifenköpfige Bartagame</figcaption>
+          </figure>
+        </div>
+
+        <p class="helper">
+          <strong>Deren Superkraft:</strong> Sie verzaubern dich!
+        </p>
+      </section>
+
+      <!-- WAS ICH MAG -->
+      <section id="mochte-ich" class="section">
+        <h2 class="section-title">Preise</h2>
+
+        <!-- ✅ ÄNDERE HIER: Deine Lieblingsliste -->
+        <ul class="chip-list" aria-label="Meine Lieblingsdinge">
+          <li>Katzen: 25€-2.500€</li>
+          <li>Hunde: 150€-über 4.000€</li>
+          <li>Kleintiere: 10€-100€</li>
+          <li>Vögel: 10€-50€</li>
+          <li>Fische: 20€-über 10€-100€</li>
+          <li>Reptielien: 20€-150€ (seltene bis über 1.000€)</li>
+        </ul>
+      </section>
+
+      <!-- PROJEKTE -->
+      <section id="projekte" class="section">
+        <h2 class="section-title">Was fressen Sie</h2>
+
+        <p class="lead">Das Futter der drei beliebtisten Haustiere.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Katzen</h3>
+            <p>
+              Hochwertiges Nass- oder Trockenfutter mit einem Fleischanteil von
+              über 80-85%
+            </p>
+            <span class="badge">🐱</span>
+          </article>
+
+          <article class="card">
+            <h3>Hunde</h3>
+            <p>
+              Hunde sind Allesfresser (Omnivoren),
+              <br />deren Ernährung auf einer Mischung aus hochwertigen
+              tierischen Proteinen, Gemüse, Obst und Kohlenhydraten basieren
+              sollte<br />
+              <a
+                href="https://www.purina.de/wahl-eines-haustieres/hunderassen?gad_source=1&gad_campaignid=20767898076&gbraid=0AAAAADn4d51HUMQk3U6OYoaDj3YDRotjQ&gclid=EAIaIQobChMI7MqN3-6_kgMVfmtBAh08RQMkEAAYASAAEgIazPD_BwE"
+                >Hunderassen</a
+              ><br /><a
+                href="https://www.purina.de/wahl-eines-haustieres/hunderassen?gad_source=1&gad_campaignid=20767898076&gbraid=0AAAAADn4d51HUMQk3U6OYoaDj3YDRotjQ&gclid=EAIaIQobChMI7MqN3-6_kgMVfmtBAh08RQMkEAAYASAAEgIazPD_BwE"
+                >Kuchen</a
+              >
+            </p>
+            <span class="badge">🐶</span>
+          </article>
+
+          <article class="card">
+            <h3>Kleintiere</h3>
+            <p>
+              rohfaserreiche Ernährung,<br />bestehend aus: täglich frischem Heu
+              (Hauptnahrung), Grünfutter (Gras, Kräuter) sowie Gemüse (Fenchel,
+              Möhren Sellerie) <br />Obst, Nüsse und getreidehaltige Nahrung
+              sollten nur in kleinen Mengen als Leckerli dienen
+            </p>
+            <span class="badge">🐹</span>
+          </article>
+
+          <article class="card">
+            <h3>Vögel</h3>
+            <p>
+              Mischung aus hochwertigem Körnerfutter, Frischfutter (Obst/Gemüse)
+              und Mineralien
+            </p>
+            <span class="badge">🐦</span>
+          </article>
+
+          <article class="card">
+            <h3>Fische</h3>
+            <p>
+              Kombination von kommerziellem Trockenfutter , Lebend- oder
+              Frostfutter,
+              <br />(je nach Art unterschiedliche Ernährungsbedürfnisse, die von
+              Allesfressern bis hin zu spezialisierten Fleisch- oder
+              Pflanzenfressern reichen)
+            </p>
+            <span class="badge">🐠</span>
+          </article>
+
+          <article class="card">
+            <h3>Reptilien</h3>
+            <p>
+              Ernährung von Reptilien hängt von der Art ab, <br />da es
+              Fleischfresser (Karnivoren), <br />Pflanzenfresser
+              (Herbivoren),<br />
+              Allesfresser (Omnivoren) gibt
+            </p>
+            <span class="badge">🦎</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- DANKE -->
+      <section id="danke" class="section">
+        <h2 class="section-title">viel Glück!</h2>
+        <p class="lead">Ich hoffe Sie finden ihr Perfektes Haustier!</p>
+        <p><a class="back-to-top" href="#top">Zurück nach oben ☝️</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2026 von Melina – selbst gebaut mit HTML &amp; CSS.</small>
+      </div>
+    </footer>
+
+    <script>
+      /*
+      ==========================================================
+      ✅ ÄNDERE HIER: Deine Einstellungen
+      ==========================================================
+      1) FAVORITE_EMOJI: Welches Emoji soll überall benutzt werden?
+      2) RAIN_SETTINGS: Wie stark soll es regnen?
+    */
+
+      // 1) Dein Emoji (einfach austauschen!)
+      const FAVORITE_EMOJI = "😍"; // z.B. "🐶" oder "🐹" oder "🦜"
+
+      // 2) Regen-Stärke (probier mal andere Zahlen!)
+      const RAIN_SETTINGS = {
+        totalTime: 5550, // wie lange es regnet (ms)
+        spawnEvery: 350, // wie oft neue Emojis kommen (größer = weniger)
+        waveCount: 15, // wie viele Emojis pro Welle
+        sizeMin: 20, // Mindestgröße (px)
+        sizeVar: 55, // Zufalls-Extra (px)
+      };
+
+      // Elemente auf der Seite
+      const favEmojiEl = document.getElementById("favEmoji");
+      const nameEmojiEl = document.getElementById("nameEmoji");
+      const rainBtn = document.getElementById("rainBtn");
+
+      // Emoji an 2 Stellen anzeigen
+      favEmojiEl.textContent = FAVORITE_EMOJI;
+      nameEmojiEl.textContent = FAVORITE_EMOJI;
+
+      // Regen (mit Rücksicht auf "Bewegung reduzieren")
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+      let rainOverlay = null;
+      let rainTimer = null;
+
+      function startEmojiRain(emoji) {
+        if (reduceMotion) return;
+
+        if (!rainOverlay) {
+          rainOverlay = document.createElement("div");
+          rainOverlay.className = "emoji-rain";
+          document.body.appendChild(rainOverlay);
+        }
+
+        if (rainTimer) clearInterval(rainTimer);
+
+        const endAt = Date.now() + RAIN_SETTINGS.totalTime;
+
+        function spawnWave() {
+          if (Date.now() > endAt) {
+            clearInterval(rainTimer);
+            rainTimer = null;
+            return;
+          }
+
+          for (let i = 0; i < RAIN_SETTINGS.waveCount; i++) {
+            const drop = document.createElement("span");
+            drop.className = "emoji-drop";
+            drop.textContent = emoji;
+
+            const x = Math.random() * 100;
+            const size =
+              RAIN_SETTINGS.sizeMin + Math.random() * RAIN_SETTINGS.sizeVar;
+            const dur = 1900 + Math.random() * 800;
+            const drift = (Math.random() * 2 - 1) * 110;
+
+            drop.style.left = x + "vw";
+            drop.style.fontSize = size + "px";
+            drop.style.animationDuration = dur + "ms";
+            drop.style.setProperty("--drift", drift + "px");
+
+            drop.addEventListener("animationend", () => drop.remove());
+            rainOverlay.appendChild(drop);
+          }
+        }
+
+        spawnWave();
+        rainTimer = setInterval(spawnWave, RAIN_SETTINGS.spawnEvery);
+      }
+
+      rainBtn.addEventListener("click", () => {
+        startEmojiRain(FAVORITE_EMOJI);
+      });
+    </script>
+  </body>
+</html>
